@@ -1,0 +1,39 @@
+/* Go back button */
+"Back" = "Назад";
+
+/* Clear recent documents list */
+"Clear" = "Очистити";
+
+/* Decrypt */
+"Decrypt" = "Розшифрувати";
+
+/* Encrypt */
+"Encrypt" = "Зашифрувати";
+
+/* Hide */
+"Hide" = "Сховати";
+
+/* Password text field placeholder */
+"Password" = "Пароль";
+
+/* Text under the arrow */
+"Press to start" = "Натисніть, щоб почати";
+
+/* Recent documents text view */
+"Recent documents:" = "Останні документи:";
+
+/* Restart button */
+"Restart" = "Заново";
+
+/* Reveal */
+"Reveal" = "Показати";
+
+/* Save button */
+"Save" = "Зберегти";
+
+/* Unknown Error alert message */
+"Unknown Error" = "Деталі невідомі";
+
+/* Unknown file size */
+"Unknown size" = "Невідомий розмір";
+

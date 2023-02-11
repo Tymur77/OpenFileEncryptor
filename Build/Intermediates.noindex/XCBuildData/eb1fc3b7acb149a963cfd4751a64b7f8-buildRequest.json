@@ -1,0 +1,44 @@
+{
+  "_buildCommand2" : {
+    "command" : "build",
+    "skipDependencies" : false,
+    "style" : "buildAndRun"
+  },
+  "buildCommand" : "build",
+  "configuredTargets" : [
+    {
+      "guid" : "20fee68644a24822f80696468db904d0c2ef76546900e87bd10f36fb49fa0752"
+    }
+  ],
+  "containerPath" : "/Users/viktoria/Projects/ios/Falcon09/Falcon09.xcodeproj",
+  "continueBuildingAfterErrors" : false,
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "exportloc",
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex",
+      "buildProductsPath" : "/Users/viktoria/Projects/ios/Falcon09/Build/Products",
+      "derivedDataPath" : "/Users/viktoria/Library/Developer/Xcode/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/viktoria/Library/Developer/Xcode/DerivedData/Falcon09-fjyeejprrfnaauanfrirhlbxynov/Index.noindex/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/viktoria/Library/Developer/Xcode/DerivedData/Falcon09-fjyeejprrfnaauanfrirhlbxynov/Index.noindex/PrecompiledHeaders",
+      "pchPath" : "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/PrecompiledHeaders"
+    },
+    "configurationName" : "Debug",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ENABLE_PREVIEWS" : "NO",
+          "ONLY_ACTIVE_ARCH" : "NO"
+        }
+      }
+    }
+  },
+  "schemeCommand" : "launch",
+  "showNonLoggedProgress" : true,
+  "useDryRun" : false,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}
