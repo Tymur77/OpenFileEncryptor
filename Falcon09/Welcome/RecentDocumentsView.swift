@@ -9,10 +9,10 @@ import SwiftUI
 
 struct RecentDocumentsView: View {
     let parent: Welcome
-    let action: (URL) -> Void
-    var urls: [URL] { Array(parent.urls) as! [URL] }
+    let action: (SecurityScopedUrl) -> Void
+    var urls: [SecurityScopedUrl] { Array(parent.urls) as! [SecurityScopedUrl] }
     
-    init(_ parent: Welcome, _ action: @escaping (URL) -> Void) {
+    init(_ parent: Welcome, _ action: @escaping (SecurityScopedUrl) -> Void) {
         self.parent = parent
         self.action = action
     }
@@ -39,6 +39,7 @@ struct RecentDocumentsView: View {
                             Button { action(securityScopedUrl) } label: {
                                 Text(securityScopedUrl.lastPathComponent)
                                     .foregroundColor(Color.white)
+                                    .padding([.bottom], 2)
                                     .lineLimit(1)
                             }
                         }

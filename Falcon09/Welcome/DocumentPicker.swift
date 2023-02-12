@@ -19,11 +19,13 @@ struct DocumentPicker: UIViewControllerRepresentable {
         }
         
         func documentPicker(_ controller: UIDocumentPickerViewController, didPickDocumentsAt urls: [URL]) {
-            documentPicker.url = urls.first
+            if let url = urls.first {
+                documentPicker.url = AnyOFEUrl(url)
+            }
         }
     }
     
-    @Binding var url: URL?
+    @Binding var url: AnyOFEUrl!
     
     func makeUIViewController(context: Context) -> UIDocumentPickerViewController {
         let picker = UIDocumentPickerViewController(forOpeningContentTypes: [.init("public.data")!], asCopy: true)

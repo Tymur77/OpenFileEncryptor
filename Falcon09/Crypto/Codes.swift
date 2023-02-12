@@ -12,7 +12,8 @@ enum Code: Int {
     case VerifierError = 501
     case PasswordVerificationFailed = 502
     case DocumentError = 503
-    case AccessSecureScopedUrlError = 504
+    case AccessSecurityScopedUrlError = 504
+    case DataError = 505
 }
 
 extension NSError {

@@ -18,10 +18,10 @@ struct Falcon09App: App {
             switch screen {
             case .welcome:
                 Welcome(screen: $screen, thumbnail: thumbnail)
-            case let .password(url, resourceType):
-                PasswordView(screen: $screen, thumbnail: thumbnail, url: url, operation: url.operation, resourceType: resourceType)
-            case let .operation(url, password, resourceType):
-                OperationView(screen: $screen, url: url, password: password, operation: url.operation, resourceType: resourceType)
+            case let .password(url):
+                PasswordView(screen: $screen, thumbnail: thumbnail, url: url, operation: url.operation)
+            case let .operation(url, password):
+                OperationView(screen: $screen, url: url, password: password, operation: url.operation)
             }
         }
     }

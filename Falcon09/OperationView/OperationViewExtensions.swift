@@ -10,28 +10,31 @@ import SwiftUI
 
 
 extension OperationView {
+    var outUrl: URL {
+        get { _outUrl.firstObject as! URL }
+        nonmutating set { _outUrl[0] = newValue }
+    }
+    var error: Error? {
+        get { _error.firstObject as? Error }
+        nonmutating set {
+            if let error = newValue {
+                _error[0] = error
+            }
+        }
+    }
+    
     func main() {
         let queue = DispatchQueue.global(priority: .default)
         queue.async {
             let start = Date()
             do {
                 if operation == .encrypt {
-                    var data: Data!
-                    if resourceType == .moved {
-                        data = try Crypto.encryptFileAt(url, withPassword: password, isSecureScopedUrl: true)
-                    } else {
-                        data = try Crypto.encryptFileAt(url, withPassword: password)
-                    }
+                    let data = try Crypto.encryptFileAt(url, withPassword: password)
                     let outPath = NSTemporaryDirectory() + url.lastPathComponent + ".crypto"
-                    outUrl.url = URL(filePath: outPath)
-                    try data.write(to: outUrl.url)
+                    outUrl = URL(filePath: outPath)
+                    try data.write(to: outUrl)
                 } else {
-                    var data: Data!
-                    if resourceType == .moved {
-                        data = try Crypto.decryptFileAt(url, withPassword: password, isSecureScopedUrl: true)
-                    } else {
-                        data = try Crypto.decryptFileAt(url, withPassword: password)
-                    }
+                    let data = try Crypto.decryptFileAt(url, withPassword: password)
                     var outPath: String
                     if url.pathExtension == "crypto" {
                         let filename = url.lastPathComponent
@@ -40,8 +43,8 @@ extension OperationView {
                     } else {
                         outPath = NSTemporaryDirectory() + url.lastPathComponent
                     }
-                    outUrl.url = URL(filePath: outPath)
-                    try data.write(to: outUrl.url)
+                    outUrl = URL(filePath: outPath)
+                    try data.write(to: outUrl)
                 }
                 let elapsed = Date().timeIntervalSince(start)
                 // 3.1 + x = 6
@@ -55,7 +58,7 @@ extension OperationView {
                     self.animate = false
                 }
             } catch {
-                self.error.error = error
+                self.error = error
                 self.isPresentingAlert.toggle()
             }
         }

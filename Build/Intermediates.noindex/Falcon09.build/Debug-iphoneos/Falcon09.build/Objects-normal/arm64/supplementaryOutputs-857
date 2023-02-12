@@ -1,0 +1,40 @@
+"/Users/viktoria/Projects/ios/Falcon09/Falcon09/extensions/double.swift":
+  diagnostics: "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/Falcon09.build/Debug-iphoneos/Falcon09.build/Objects-normal/arm64/double.dia"
+  swift-dependencies: "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/Falcon09.build/Debug-iphoneos/Falcon09.build/Objects-normal/arm64/double.swiftdeps"
+  object: "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/Falcon09.build/Debug-iphoneos/Falcon09.build/Objects-normal/arm64/double.o"
+  dependencies: "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/Falcon09.build/Debug-iphoneos/Falcon09.build/Objects-normal/arm64/double.d"
+"/Users/viktoria/Projects/ios/Falcon09/Falcon09/extensions/dictionary.swift":
+  object: "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/Falcon09.build/Debug-iphoneos/Falcon09.build/Objects-normal/arm64/dictionary.o"
+  diagnostics: "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/Falcon09.build/Debug-iphoneos/Falcon09.build/Objects-normal/arm64/dictionary.dia"
+  swift-dependencies: "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/Falcon09.build/Debug-iphoneos/Falcon09.build/Objects-normal/arm64/dictionary.swiftdeps"
+  dependencies: "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/Falcon09.build/Debug-iphoneos/Falcon09.build/Objects-normal/arm64/dictionary.d"
+"/Users/viktoria/Projects/ios/Falcon09/Falcon09/OFEUrlProtocol/AnyOFEUrl.swift":
+  swift-dependencies: "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/Falcon09.build/Debug-iphoneos/Falcon09.build/Objects-normal/arm64/AnyOFEUrl.swiftdeps"
+  diagnostics: "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/Falcon09.build/Debug-iphoneos/Falcon09.build/Objects-normal/arm64/AnyOFEUrl.dia"
+  object: "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/Falcon09.build/Debug-iphoneos/Falcon09.build/Objects-normal/arm64/AnyOFEUrl.o"
+  dependencies: "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/Falcon09.build/Debug-iphoneos/Falcon09.build/Objects-normal/arm64/AnyOFEUrl.d"
+"/Users/viktoria/Projects/ios/Falcon09/Falcon09/OFEUrlProtocol/OFEUrlProtocol.swift":
+  swift-dependencies: "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/Falcon09.build/Debug-iphoneos/Falcon09.build/Objects-normal/arm64/OFEUrlProtocol.swiftdeps"
+  diagnostics: "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/Falcon09.build/Debug-iphoneos/Falcon09.build/Objects-normal/arm64/OFEUrlProtocol.dia"
+  object: "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/Falcon09.build/Debug-iphoneos/Falcon09.build/Objects-normal/arm64/OFEUrlProtocol.o"
+  dependencies: "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/Falcon09.build/Debug-iphoneos/Falcon09.build/Objects-normal/arm64/OFEUrlProtocol.d"
+"/Users/viktoria/Projects/ios/Falcon09/Falcon09/extensions/data.swift":
+  dependencies: "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/Falcon09.build/Debug-iphoneos/Falcon09.build/Objects-normal/arm64/data.d"
+  swift-dependencies: "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/Falcon09.build/Debug-iphoneos/Falcon09.build/Objects-normal/arm64/data.swiftdeps"
+  object: "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/Falcon09.build/Debug-iphoneos/Falcon09.build/Objects-normal/arm64/data.o"
+  diagnostics: "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/Falcon09.build/Debug-iphoneos/Falcon09.build/Objects-normal/arm64/data.dia"
+"/Users/viktoria/Projects/ios/Falcon09/Falcon09/Welcome/RecentDocumentsView.swift":
+  diagnostics: "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/Falcon09.build/Debug-iphoneos/Falcon09.build/Objects-normal/arm64/RecentDocumentsView.dia"
+  object: "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/Falcon09.build/Debug-iphoneos/Falcon09.build/Objects-normal/arm64/RecentDocumentsView.o"
+  swift-dependencies: "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/Falcon09.build/Debug-iphoneos/Falcon09.build/Objects-normal/arm64/RecentDocumentsView.swiftdeps"
+  dependencies: "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/Falcon09.build/Debug-iphoneos/Falcon09.build/Objects-normal/arm64/RecentDocumentsView.d"
+"/Users/viktoria/Projects/ios/Falcon09/Falcon09/Falcon09App.swift":
+  swift-dependencies: "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/Falcon09.build/Debug-iphoneos/Falcon09.build/Objects-normal/arm64/Falcon09App.swiftdeps"
+  dependencies: "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/Falcon09.build/Debug-iphoneos/Falcon09.build/Objects-normal/arm64/Falcon09App.d"
+  object: "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/Falcon09.build/Debug-iphoneos/Falcon09.build/Objects-normal/arm64/Falcon09App.o"
+  diagnostics: "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/Falcon09.build/Debug-iphoneos/Falcon09.build/Objects-normal/arm64/Falcon09App.dia"
+"/Users/viktoria/Projects/ios/Falcon09/Falcon09/OFEUrlProtocol/SecureScopedUrl.swift":
+  swift-dependencies: "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/Falcon09.build/Debug-iphoneos/Falcon09.build/Objects-normal/arm64/SecureScopedUrl.swiftdeps"
+  object: "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/Falcon09.build/Debug-iphoneos/Falcon09.build/Objects-normal/arm64/SecureScopedUrl.o"
+  dependencies: "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/Falcon09.build/Debug-iphoneos/Falcon09.build/Objects-normal/arm64/SecureScopedUrl.d"
+  diagnostics: "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/Falcon09.build/Debug-iphoneos/Falcon09.build/Objects-normal/arm64/SecureScopedUrl.dia"

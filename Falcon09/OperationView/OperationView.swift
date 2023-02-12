@@ -9,24 +9,16 @@ import SwiftUI
 
 
 struct OperationView: View {
-    class OutputUrl {
-        var url: URL!
-    }
-    class OperationError {
-        var error: Error!
-    }
-    
     @Binding var screen: Screen
-    let url: URL
+    let url: AnyOFEUrl
     let password: String
     let operation: CryptoOperation
-    let resourceType: ResourceType
     
     @State var animate = false
     @State var isPresentingAlert = false
-    @State private var isPresentingSaver = false
-    let outUrl = OutputUrl()
-    var error = OperationError()
+    @State var isPresentingSaver = false
+    let _outUrl = NSMutableArray()
+    let _error = NSMutableArray()
     
     var body: some View {
         print("OperationView body")
@@ -118,21 +110,13 @@ struct OperationView: View {
                 screen = .welcome
             }
         } message: {
-            Text(error.error?.localizedDescription ?? NSLocalizedString("Unknown Error", comment: "Unknown Error alert message"))
+            Text(error?.localizedDescription ?? NSLocalizedString("Unknown Error", comment: "Unknown Error alert message"))
         }
         .sheet(isPresented: $isPresentingSaver) {
-            DocumentSaver(url: outUrl.url)
+            DocumentSaver(url: outUrl)
         }
         .foregroundStyle(Color.white)
 
     }
     
-}
-
-struct OperationView_Previews: PreviewProvider {
-    static var previews: some View {
-        let url = URL(string: "https://developer.apple.com/")!
-        let password = "Password1"
-        return OperationView(screen: .constant(.operation(url, password, .imported)), url: url, password: password, operation: url.operation, resourceType: .imported)
-    }
 }

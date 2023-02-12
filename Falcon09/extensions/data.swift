@@ -9,26 +9,35 @@ import Foundation
 
 
 extension Data {
-    func resolve() -> URL? {
+    func resolve() -> SecurityScopedUrl? {
         var isStale = false
-        if let url = try? URL(resolvingBookmarkData: self, bookmarkDataIsStale: &isStale),
+        if let securityScopedUrl = try? URL(resolvingBookmarkData: self, bookmarkDataIsStale: &isStale).securityScopedWrapper,
            !isStale
         {
-            return url
+            return securityScopedUrl
         } else {
             return nil
         }
     }
     
-    init(contentsOfSecureScopedUrl url: URL) throws {
-        if url.startAccessingSecurityScopedResource() {
+    init(contentsOf securityScopedUrl: SecurityScopedUrl) throws {
+        do {
             var data: Data!
             // read is not asynchronous
-            try url.read { data = try Data(contentsOf: $0) }
+            try securityScopedUrl.read { data = try Data(contentsOf: $0) }
             self = data
-            url.stopAccessingSecurityScopedResource()
+        } catch {
+            throw error
+        }
+    }
+    
+    init(contentsOf url: AnyOFEUrl) throws {
+        if let securityScopedUrl = url.url as? SecurityScopedUrl {
+            self = try Data(contentsOf: securityScopedUrl)
+        } else if let url = url.url as? URL {
+            self = try Data(contentsOf: url)
         } else {
-            throw NSError(domain: OpenFileEncryptorDomain, code: .AccessSecureScopedUrlError)
+            throw NSError(domain: OpenFileEncryptorDomain, code: .DataError)
         }
     }
 

@@ -1,0 +1,40 @@
+"/Users/viktoria/Projects/ios/Falcon09/Falcon09/extensions/string.swift":
+  swift-dependencies: "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/Falcon09.build/Debug-iphoneos/Falcon09.build/Objects-normal/arm64/string.swiftdeps"
+  diagnostics: "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/Falcon09.build/Debug-iphoneos/Falcon09.build/Objects-normal/arm64/string.dia"
+  dependencies: "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/Falcon09.build/Debug-iphoneos/Falcon09.build/Objects-normal/arm64/string.d"
+  object: "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/Falcon09.build/Debug-iphoneos/Falcon09.build/Objects-normal/arm64/string.o"
+"/Users/viktoria/Projects/ios/Falcon09/Falcon09/Welcome/DocumentPicker.swift":
+  object: "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/Falcon09.build/Debug-iphoneos/Falcon09.build/Objects-normal/arm64/DocumentPicker.o"
+  dependencies: "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/Falcon09.build/Debug-iphoneos/Falcon09.build/Objects-normal/arm64/DocumentPicker.d"
+  diagnostics: "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/Falcon09.build/Debug-iphoneos/Falcon09.build/Objects-normal/arm64/DocumentPicker.dia"
+  swift-dependencies: "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/Falcon09.build/Debug-iphoneos/Falcon09.build/Objects-normal/arm64/DocumentPicker.swiftdeps"
+"/Users/viktoria/Projects/ios/Falcon09/Falcon09/Crypto/Verifier.swift":
+  diagnostics: "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/Falcon09.build/Debug-iphoneos/Falcon09.build/Objects-normal/arm64/Verifier.dia"
+  object: "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/Falcon09.build/Debug-iphoneos/Falcon09.build/Objects-normal/arm64/Verifier.o"
+  swift-dependencies: "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/Falcon09.build/Debug-iphoneos/Falcon09.build/Objects-normal/arm64/Verifier.swiftdeps"
+  dependencies: "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/Falcon09.build/Debug-iphoneos/Falcon09.build/Objects-normal/arm64/Verifier.d"
+"/Users/viktoria/Projects/ios/Falcon09/Falcon09/SharedViews/Background.swift":
+  diagnostics: "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/Falcon09.build/Debug-iphoneos/Falcon09.build/Objects-normal/arm64/Background.dia"
+  swift-dependencies: "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/Falcon09.build/Debug-iphoneos/Falcon09.build/Objects-normal/arm64/Background.swiftdeps"
+  dependencies: "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/Falcon09.build/Debug-iphoneos/Falcon09.build/Objects-normal/arm64/Background.d"
+  object: "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/Falcon09.build/Debug-iphoneos/Falcon09.build/Objects-normal/arm64/Background.o"
+"/Users/viktoria/Projects/ios/Falcon09/Falcon09/extensions/color.swift":
+  swift-dependencies: "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/Falcon09.build/Debug-iphoneos/Falcon09.build/Objects-normal/arm64/color.swiftdeps"
+  object: "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/Falcon09.build/Debug-iphoneos/Falcon09.build/Objects-normal/arm64/color.o"
+  dependencies: "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/Falcon09.build/Debug-iphoneos/Falcon09.build/Objects-normal/arm64/color.d"
+  diagnostics: "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/Falcon09.build/Debug-iphoneos/Falcon09.build/Objects-normal/arm64/color.dia"
+"/Users/viktoria/Projects/ios/Falcon09/Falcon09/extensions/url.swift":
+  object: "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/Falcon09.build/Debug-iphoneos/Falcon09.build/Objects-normal/arm64/url.o"
+  swift-dependencies: "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/Falcon09.build/Debug-iphoneos/Falcon09.build/Objects-normal/arm64/url.swiftdeps"
+  dependencies: "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/Falcon09.build/Debug-iphoneos/Falcon09.build/Objects-normal/arm64/url.d"
+  diagnostics: "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/Falcon09.build/Debug-iphoneos/Falcon09.build/Objects-normal/arm64/url.dia"
+"/Users/viktoria/Projects/ios/Falcon09/Falcon09/Size.swift":
+  dependencies: "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/Falcon09.build/Debug-iphoneos/Falcon09.build/Objects-normal/arm64/Size.d"
+  object: "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/Falcon09.build/Debug-iphoneos/Falcon09.build/Objects-normal/arm64/Size.o"
+  swift-dependencies: "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/Falcon09.build/Debug-iphoneos/Falcon09.build/Objects-normal/arm64/Size.swiftdeps"
+  diagnostics: "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/Falcon09.build/Debug-iphoneos/Falcon09.build/Objects-normal/arm64/Size.dia"
+"/Users/viktoria/Projects/ios/Falcon09/Falcon09/extensions/geometryProxy.swift":
+  dependencies: "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/Falcon09.build/Debug-iphoneos/Falcon09.build/Objects-normal/arm64/geometryProxy.d"
+  object: "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/Falcon09.build/Debug-iphoneos/Falcon09.build/Objects-normal/arm64/geometryProxy.o"
+  swift-dependencies: "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/Falcon09.build/Debug-iphoneos/Falcon09.build/Objects-normal/arm64/geometryProxy.swiftdeps"
+  diagnostics: "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/Falcon09.build/Debug-iphoneos/Falcon09.build/Objects-normal/arm64/geometryProxy.dia"

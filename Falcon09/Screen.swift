@@ -9,6 +9,6 @@ import Foundation
 
 enum Screen: Equatable {
     case welcome
-    case password(URL, ResourceType)
-    case operation(URL, String, ResourceType)
+    case password(AnyOFEUrl)
+    case operation(AnyOFEUrl, String)
 }

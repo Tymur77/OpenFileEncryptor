@@ -10,21 +10,10 @@ import SwiftUI
 struct PasswordView: View {
     @Binding var screen: Screen
     let thumbnail: OFEThumbnail
-    let url: URL
+    let url: AnyOFEUrl
     let operation: CryptoOperation
-    let resourceType: ResourceType
     
-    @State private var password: String = ""
-    private let size: Int?
-    
-    init(screen: Binding<Screen>, thumbnail: OFEThumbnail, url: URL, operation: CryptoOperation, resourceType: ResourceType) {
-        _screen = screen
-        self.thumbnail = thumbnail
-        self.url = url
-        self.operation = operation
-        self.resourceType = resourceType
-        self.size = url.size
-    }
+    @State var password: String = ""
     
     var body: some View {
         print("PasswordView body")
@@ -65,7 +54,7 @@ struct PasswordView: View {
                 GeometryReader { proxy in
                     if password.count > 0 {
                         YellowButton(operationString, proxy.size.width/2) {
-                            screen = .operation(url, password, resourceType)
+                            screen = .operation(url, password)
                         }
                         .position(x: proxy.center.x)
                     }
@@ -77,11 +66,4 @@ struct PasswordView: View {
         .foregroundStyle(Color.white)
     }
     
-}
-
-struct PasswordView_Previews: PreviewProvider {
-    static var previews: some View {
-        let url = URL(string: "https://developer.apple.com/")!
-        return PasswordView(screen: .constant(.password(url, .imported)), thumbnail: OFEThumbnail(), url: url, operation: url.operation, resourceType: .imported)
-    }
 }

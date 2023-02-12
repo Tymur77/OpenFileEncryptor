@@ -10,47 +10,8 @@ import SwiftUI
 import QuickLookThumbnailing
 
 
-extension URL {
-    var promisedSize: Int? {
-        return try? self.promisedItemResourceValues(forKeys: [.fileSizeKey]).fileSize
-    }
-    
-    var size: Int? {
-        return try? self.resourceValues(forKeys: [.fileSizeKey]).fileSize
-    }
-    
-    var fileExists: Bool {
-        return FileManager.default.fileExists(atPath: self.path)
-    }
-    
-    var bookmark: Data? {
-        return try? self.bookmarkData(options: [.minimalBookmark])
-    }
-    
-    func access(_ accessBlock: () -> Void) {
-        if self.startAccessingSecurityScopedResource() {
-            accessBlock()
-            self.stopAccessingSecurityScopedResource()
-        }
-    }
-
-    func read(_ readBlock: (URL) throws -> Void) throws {
-        var error: NSError?
-        var readError: Error?
-        NSFileCoordinator().coordinate(readingItemAt: self, error: &error) {
-            do {
-                try readBlock($0)
-            } catch {
-                readError = error
-            }
-        }
-        if let error = error {
-            throw error
-        }
-        if let readError = readError {
-            throw readError
-        }
-    }
+extension URL: OFEUrlProtocol {
+    var size: Int? { try? self.resourceValues(forKeys: [.fileSizeKey]).fileSize }
 
     func generateThumbnail(_ size: CGSize, _ complitionBlock: @escaping (Image) -> Void) {
         let request = QLThumbnailGenerator.Request(fileAt: self, size: size, scale: 1, representationTypes: [.icon, .thumbnail])
@@ -62,6 +23,8 @@ extension URL {
         }
     }
     
-    var operation: CryptoOperation { self.pathExtension == "crypto" ? .decrypt : .encrypt }
+    var operation: CryptoOperation! { self.pathExtension == "crypto" ? .decrypt : .encrypt }
+    
+    var securityScopedWrapper: SecurityScopedUrl { SecurityScopedUrl(self) }
     
 }

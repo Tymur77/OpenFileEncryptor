@@ -19,14 +19,12 @@ struct DocumentSaver: UIViewControllerRepresentable {
         }
         
         func documentPicker(_ controller: UIDocumentPickerViewController, didPickDocumentsAt urls: [URL]) {
-            if let securityScopedUrl = urls.first {
-                securityScopedUrl.access {
-                    var array = UserDefaults.standard.array(forKey: "bookmarks") ?? []
-                    if let bookmark = securityScopedUrl.bookmark {
-                        array.append(bookmark)
-                    }
-                    UserDefaults.standard.set(array, forKey: "bookmarks")
+            if let securityScopedUrl = urls.first?.securityScopedWrapper {
+                var array = UserDefaults.standard.array(forKey: "bookmarks") ?? []
+                if let bookmark = securityScopedUrl.bookmark {
+                    array.append(bookmark)
                 }
+                UserDefaults.standard.set(array, forKey: "bookmarks")
             }
         }
     }

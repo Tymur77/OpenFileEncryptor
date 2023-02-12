@@ -10,41 +10,16 @@ import UIKit
 
 
 struct Welcome: View {
-    
     @Binding var screen: Screen
     let thumbnail: OFEThumbnail
     
-    @State private var url: URL?
-    @State private var isPresenting: Bool = false
+    @State var url: AnyOFEUrl!
+    @State var isPresenting: Bool = false
     @State var refresh = false
     let urls = NSMutableSet()
-    private var resourceType = NSMutableArray()
     
-    private var bookmarks: [Data]? {
+    var bookmarks: [Data]? {
         return UserDefaults.standard.array(forKey: "bookmarks") as? [Data]
-    }
-    
-    init(screen: Binding<Screen>, thumbnail: OFEThumbnail) {
-        _screen = screen
-        self.thumbnail = thumbnail
-        
-        updateRecentDocumentsList()
-    }
-    
-    func updateRecentDocumentsList() {
-        DispatchQueue.global(priority: .default).async {
-            var needsDisplay = false
-            for bookmark in bookmarks ?? [] {
-                if let securityScopedUrl = bookmark.resolve() {
-                    // if url is not a placeholder and hasn't been added to the list yet
-                    if securityScopedUrl.fileExists && !urls.contains(securityScopedUrl) {
-                        urls.add(securityScopedUrl)
-                        needsDisplay = true
-                    }
-                }
-            }
-            if needsDisplay { refresh.toggle() }
-        }
     }
     
     var body: some View {
@@ -102,31 +77,17 @@ struct Welcome: View {
                 
                 Text(NSLocalizedString("Press to start", comment: "Text under the arrow"))
                 
-                RecentDocumentsView(self) {
-                    resourceType.add(ResourceType.imported)
-                    url = $0
-                }
+                RecentDocumentsView(self) { url = AnyOFEUrl($0) }
+                    .padding([.top], 20)
             }
             .offset(y: 200)
         }
         .foregroundStyle(Color.white)
         .sheet(isPresented: $isPresenting) {
             DocumentPicker(url: $url)
-                .onDisappear { resourceType.add(ResourceType.imported) }
         }
-        .onChange(of: url) { _ in
-            if screen == .welcome {
-                if url!.startAccessingSecurityScopedResource() {
-                    url!.generateThumbnail(CGSizeMake(200, 200)) {
-                        thumbnail.image = $0
-                        url!.stopAccessingSecurityScopedResource()
-                    }
-                }
-                DispatchQueue.global(priority: .high).asyncAfter(deadline: .now() + .milliseconds(1250)) {
-                    screen = .password(url!, resourceType.firstObject as! ResourceType)
-                }
-            }
-        }
+        .onChange(of: url) { _ in switchScreen() }
+        .onAppear { updateRecentDocumentsList() }
     }
     
 }

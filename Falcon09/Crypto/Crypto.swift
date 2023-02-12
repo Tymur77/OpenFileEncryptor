@@ -24,18 +24,14 @@ class Crypto {
         }
     }
     
-    static func encryptFileAt(
-        _ url: URL,
-        withPassword password: String,
-        isSecureScopedUrl: Bool = false
-    ) throws -> Data {
+    static func encryptFileAt(_ url: AnyOFEUrl, withPassword password: String) throws -> Data {
         do {
             let salt = try generateRandomData(count: 16)
             let key = try deriveKey(password: password, salt: salt)
             guard let verifier = Verifier(salt: salt, key: key) else {
                 throw NSError(domain: OpenFileEncryptorDomain, code: .VerifierError)
             }
-            let data = try isSecureScopedUrl ? Data(contentsOfSecureScopedUrl: url) : Data(contentsOf: url)
+            let data = try Data(contentsOf: url)
             let secureData = try encrypt(data, withKey: key)
             let plistObject = PlistObject(verifier, secureData)
             return try PropertyListEncoder().encode(plistObject)
@@ -44,13 +40,9 @@ class Crypto {
         }
     }
     
-    static func decryptFileAt(
-        _ url: URL,
-        withPassword password: String,
-        isSecureScopedUrl: Bool = false
-    ) throws -> Data {
+    static func decryptFileAt(_ url: AnyOFEUrl, withPassword password: String) throws -> Data {
         do {
-            let data = try isSecureScopedUrl ? Data(contentsOfSecureScopedUrl: url) : Data(contentsOf: url)
+            let data = try Data(contentsOf: url)
             let plistObject = try PropertyListDecoder().decode(PlistObject.self, from: data)
             let verifier = Verifier()
             verifier.salt = plistObject.salt
