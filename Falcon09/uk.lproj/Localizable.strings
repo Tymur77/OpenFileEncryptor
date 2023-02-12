@@ -1,8 +1,17 @@
 /* Go back button */
 "Back" = "Назад";
 
+/* Cancel buttom text */
+"Cancel" = "Зупинити";
+
 /* Clear recent documents list */
 "Clear" = "Очистити";
+
+/* Clear recent documents list alert title */
+"Clear recent documents?" = "Очистити останні документи?";
+
+/* Clear recent documents list alert message */
+"Clearing recent documents is irreversible" = "Цей процес не можна відмінити";
 
 /* Decrypt */
 "Decrypt" = "Розшифрувати";
@@ -12,6 +21,12 @@
 
 /* Hide */
 "Hide" = "Сховати";
+
+/* Operation failed alert title */
+"Operation failed" = "Операція не пройшла";
+
+/* No comment provided by engineer. */
+"Operation failed alert title" = "Операція не пройшла";
 
 /* Password text field placeholder */
 "Password" = "Пароль";

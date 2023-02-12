@@ -14,7 +14,8 @@ struct Welcome: View {
     let thumbnail: OFEThumbnail
     
     @State var url: AnyOFEUrl!
-    @State var isPresenting: Bool = false
+    @State var isPresentingOpenDialog = false
+    @State var isPresentingClearAlert = false
     @State var refresh = false
     let urls = NSMutableSet()
     
@@ -58,7 +59,7 @@ struct Welcome: View {
             }
             
             VStack(spacing: 20) {
-                Button { isPresenting.toggle() } label: {
+                Button { isPresentingOpenDialog.toggle() } label: {
                     ZStack {
                         Rectangle()
                             .fill(Color.OFEYellow)
@@ -77,23 +78,17 @@ struct Welcome: View {
                 
                 Text(NSLocalizedString("Press to start", comment: "Text under the arrow"))
                 
-                RecentDocumentsView(self) { url = AnyOFEUrl($0) }
+                RecentDocumentsView(parent: self) { url = AnyOFEUrl($0) }
                     .padding([.top], 20)
             }
             .offset(y: 200)
         }
         .foregroundStyle(Color.white)
-        .sheet(isPresented: $isPresenting) {
+        .sheet(isPresented: $isPresentingOpenDialog) {
             DocumentPicker(url: $url)
         }
         .onChange(of: url) { _ in switchScreen() }
         .onAppear { updateRecentDocumentsList() }
     }
     
-}
-
-struct Welcome_Previews: PreviewProvider {
-    static var previews: some View {
-        Welcome(screen: .constant(.welcome), thumbnail: OFEThumbnail())
-    }
 }

@@ -1,0 +1,40 @@
+"/Users/viktoria/Projects/ios/Falcon09/Falcon09/extensions/color.swift":
+  object: "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/Falcon09.build/Debug-iphoneos/Falcon09.build/Objects-normal/arm64/color.o"
+  dependencies: "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/Falcon09.build/Debug-iphoneos/Falcon09.build/Objects-normal/arm64/color.d"
+  diagnostics: "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/Falcon09.build/Debug-iphoneos/Falcon09.build/Objects-normal/arm64/color.dia"
+  swift-dependencies: "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/Falcon09.build/Debug-iphoneos/Falcon09.build/Objects-normal/arm64/color.swiftdeps"
+"/Users/viktoria/Projects/ios/Falcon09/Falcon09/OperationView/OperationView.swift":
+  dependencies: "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/Falcon09.build/Debug-iphoneos/Falcon09.build/Objects-normal/arm64/OperationView.d"
+  swift-dependencies: "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/Falcon09.build/Debug-iphoneos/Falcon09.build/Objects-normal/arm64/OperationView.swiftdeps"
+  object: "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/Falcon09.build/Debug-iphoneos/Falcon09.build/Objects-normal/arm64/OperationView.o"
+  diagnostics: "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/Falcon09.build/Debug-iphoneos/Falcon09.build/Objects-normal/arm64/OperationView.dia"
+"/Users/viktoria/Projects/ios/Falcon09/Falcon09/Welcome/Welcome.swift":
+  diagnostics: "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/Falcon09.build/Debug-iphoneos/Falcon09.build/Objects-normal/arm64/Welcome.dia"
+  dependencies: "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/Falcon09.build/Debug-iphoneos/Falcon09.build/Objects-normal/arm64/Welcome.d"
+  swift-dependencies: "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/Falcon09.build/Debug-iphoneos/Falcon09.build/Objects-normal/arm64/Welcome.swiftdeps"
+  object: "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/Falcon09.build/Debug-iphoneos/Falcon09.build/Objects-normal/arm64/Welcome.o"
+"/Users/viktoria/Projects/ios/Falcon09/Falcon09/Welcome/ApplicationNameComponents.swift":
+  dependencies: "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/Falcon09.build/Debug-iphoneos/Falcon09.build/Objects-normal/arm64/ApplicationNameComponents.d"
+  swift-dependencies: "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/Falcon09.build/Debug-iphoneos/Falcon09.build/Objects-normal/arm64/ApplicationNameComponents.swiftdeps"
+  object: "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/Falcon09.build/Debug-iphoneos/Falcon09.build/Objects-normal/arm64/ApplicationNameComponents.o"
+  diagnostics: "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/Falcon09.build/Debug-iphoneos/Falcon09.build/Objects-normal/arm64/ApplicationNameComponents.dia"
+"/Users/viktoria/Projects/ios/Falcon09/Falcon09/Crypto/Crypto.swift":
+  diagnostics: "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/Falcon09.build/Debug-iphoneos/Falcon09.build/Objects-normal/arm64/Crypto.dia"
+  object: "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/Falcon09.build/Debug-iphoneos/Falcon09.build/Objects-normal/arm64/Crypto.o"
+  dependencies: "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/Falcon09.build/Debug-iphoneos/Falcon09.build/Objects-normal/arm64/Crypto.d"
+  swift-dependencies: "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/Falcon09.build/Debug-iphoneos/Falcon09.build/Objects-normal/arm64/Crypto.swiftdeps"
+"/Users/viktoria/Projects/ios/Falcon09/Falcon09/extensions/alert.swift":
+  object: "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/Falcon09.build/Debug-iphoneos/Falcon09.build/Objects-normal/arm64/alert.o"
+  dependencies: "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/Falcon09.build/Debug-iphoneos/Falcon09.build/Objects-normal/arm64/alert.d"
+  swift-dependencies: "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/Falcon09.build/Debug-iphoneos/Falcon09.build/Objects-normal/arm64/alert.swiftdeps"
+  diagnostics: "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/Falcon09.build/Debug-iphoneos/Falcon09.build/Objects-normal/arm64/alert.dia"
+"/Users/viktoria/Projects/ios/Falcon09/Falcon09/OperationView/OperationViewExtensions.swift":
+  diagnostics: "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/Falcon09.build/Debug-iphoneos/Falcon09.build/Objects-normal/arm64/OperationViewExtensions.dia"
+  dependencies: "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/Falcon09.build/Debug-iphoneos/Falcon09.build/Objects-normal/arm64/OperationViewExtensions.d"
+  swift-dependencies: "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/Falcon09.build/Debug-iphoneos/Falcon09.build/Objects-normal/arm64/OperationViewExtensions.swiftdeps"
+  object: "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/Falcon09.build/Debug-iphoneos/Falcon09.build/Objects-normal/arm64/OperationViewExtensions.o"
+"/Users/viktoria/Projects/ios/Falcon09/Falcon09/Screen.swift":
+  object: "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/Falcon09.build/Debug-iphoneos/Falcon09.build/Objects-normal/arm64/Screen.o"
+  diagnostics: "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/Falcon09.build/Debug-iphoneos/Falcon09.build/Objects-normal/arm64/Screen.dia"
+  swift-dependencies: "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/Falcon09.build/Debug-iphoneos/Falcon09.build/Objects-normal/arm64/Screen.swiftdeps"
+  dependencies: "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/Falcon09.build/Debug-iphoneos/Falcon09.build/Objects-normal/arm64/Screen.d"

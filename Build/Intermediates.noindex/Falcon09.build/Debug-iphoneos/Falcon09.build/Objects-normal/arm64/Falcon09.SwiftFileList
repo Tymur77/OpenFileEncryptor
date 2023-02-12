@@ -11,7 +11,6 @@
 /Users/viktoria/Projects/ios/Falcon09/Falcon09/Crypto/Crypto.swift
 /Users/viktoria/Projects/ios/Falcon09/Falcon09/Screen.swift
 /Users/viktoria/Projects/ios/Falcon09/Falcon09/OperationView/OperationViewExtensions.swift
-/Users/viktoria/Projects/ios/Falcon09/Falcon09/extensions/alert.swift
 /Users/viktoria/Projects/ios/Falcon09/Falcon09/Welcome/Welcome.swift
 /Users/viktoria/Projects/ios/Falcon09/Falcon09/Welcome/ApplicationNameComponents.swift
 /Users/viktoria/Projects/ios/Falcon09/Falcon09/extensions/color.swift
@@ -25,7 +24,7 @@
 /Users/viktoria/Projects/ios/Falcon09/Falcon09/CryptoOperation.swift
 /Users/viktoria/Projects/ios/Falcon09/Falcon09/extensions/dictionary.swift
 /Users/viktoria/Projects/ios/Falcon09/Falcon09/Welcome/RecentDocumentsView.swift
-/Users/viktoria/Projects/ios/Falcon09/Falcon09/OFEUrlProtocol/SecureScopedUrl.swift
+/Users/viktoria/Projects/ios/Falcon09/Falcon09/OFEUrlProtocol/SecurityScopedUrl.swift
 /Users/viktoria/Projects/ios/Falcon09/Falcon09/OFEUrlProtocol/OFEUrlProtocol.swift
 /Users/viktoria/Projects/ios/Falcon09/Falcon09/Falcon09App.swift
 /Users/viktoria/Projects/ios/Falcon09/Falcon09/extensions/data.swift

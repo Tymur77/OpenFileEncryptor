@@ -12,11 +12,6 @@ struct RecentDocumentsView: View {
     let action: (SecurityScopedUrl) -> Void
     var urls: [SecurityScopedUrl] { Array(parent.urls) as! [SecurityScopedUrl] }
     
-    init(_ parent: Welcome, _ action: @escaping (SecurityScopedUrl) -> Void) {
-        self.parent = parent
-        self.action = action
-    }
-    
     var body: some View {
         if urls.count > 0 {
             VStack(alignment: .leading) {
@@ -24,11 +19,7 @@ struct RecentDocumentsView: View {
                     Text(NSLocalizedString("Recent documents:", comment: "Recent documents text view"))
                         .foregroundColor(Color.OFELightGray)
                     Spacer()
-                    Button {
-                        UserDefaults.standard.set([], forKey: "bookmarks")
-                        parent.urls.removeAllObjects()
-                        parent.refresh.toggle()
-                    } label: {
+                    Button { parent.isPresentingClearAlert.toggle() } label: {
                         Text(NSLocalizedString("Clear", comment: "Clear recent documents list"))
                             .foregroundColor(.red)
                     }
@@ -47,14 +38,23 @@ struct RecentDocumentsView: View {
                 }
             }
             .padding([.leading, .trailing])
+            .alert(
+                Text(NSLocalizedString("Clear recent documents?", comment: "Clear recent documents list alert title")),
+                isPresented: parent.$isPresentingClearAlert)
+            {
+                Button(NSLocalizedString("Cancel", comment: "Cancel buttom text"), role: .cancel) {}
+                Button(NSLocalizedString("Clear", comment: "Clear recent documents list"), role: .destructive)
+                {
+                    UserDefaults.standard.set([], forKey: "bookmarks")
+                    parent.urls.removeAllObjects()
+                    parent.refresh.toggle()
+                }
+            } message: {
+                Text(NSLocalizedString("Clearing recent documents is irreversible", comment: "Clear recent documents list alert message"))
+            }
+
         } else {
             EmptyView()
         }
-    }
-}
-
-struct RecentDocumentsView_Previews: PreviewProvider {
-    static var previews: some View {
-        RecentDocumentsView(Welcome(screen: .constant(.welcome), thumbnail: OFEThumbnail())) { _ in }
     }
 }

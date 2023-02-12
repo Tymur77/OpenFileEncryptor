@@ -26,7 +26,6 @@
 		7593DB2F299796D800E5CA9C /* QCCPBKDF2SHAKeyDerivation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7593DB29299796D700E5CA9C /* QCCPBKDF2SHAKeyDerivation.m */; };
 		7593DB30299796D800E5CA9C /* QCCSHADigest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7593DB2A299796D800E5CA9C /* QCCSHADigest.m */; };
 		7593DB322997B32100E5CA9C /* OperationViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7593DB312997B32100E5CA9C /* OperationViewExtensions.swift */; };
-		7593DB362997C62900E5CA9C /* alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7593DB352997C62900E5CA9C /* alert.swift */; };
 		7593DB3B2998214E00E5CA9C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7593DB392998214D00E5CA9C /* Localizable.strings */; };
 		7593DB3E2998CFC800E5CA9C /* WelcomeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7593DB3D2998CFC800E5CA9C /* WelcomeExtensions.swift */; };
 		7593DB402998D6A500E5CA9C /* SecurityScopedUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7593DB3F2998D6A500E5CA9C /* SecurityScopedUrl.swift */; };
@@ -73,7 +72,6 @@
 		7593DB2C299796D800E5CA9C /* QCCPBKDF2SHAKeyDerivation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCCPBKDF2SHAKeyDerivation.h; sourceTree = "<group>"; };
 		7593DB2D299796D800E5CA9C /* QCCSHADigest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCCSHADigest.h; sourceTree = "<group>"; };
 		7593DB312997B32100E5CA9C /* OperationViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationViewExtensions.swift; sourceTree = "<group>"; };
-		7593DB352997C62900E5CA9C /* alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = alert.swift; sourceTree = "<group>"; };
 		7593DB3A2998214E00E5CA9C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		7593DB3C2998216400E5CA9C /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Localizable.strings; sourceTree = "<group>"; };
 		7593DB3D2998CFC800E5CA9C /* WelcomeExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeExtensions.swift; sourceTree = "<group>"; };
@@ -171,7 +169,6 @@
 				75B77ABF299402080045D29D /* array.swift */,
 				75B77ACA299505150045D29D /* double.swift */,
 				75B77AD329951E630045D29D /* data.swift */,
-				7593DB352997C62900E5CA9C /* alert.swift */,
 			);
 			path = extensions;
 			sourceTree = "<group>";
@@ -324,7 +321,6 @@
 				7593DB2429978ED700E5CA9C /* Crypto.swift in Sources */,
 				75B77AC729944D820045D29D /* Screen.swift in Sources */,
 				7593DB322997B32100E5CA9C /* OperationViewExtensions.swift in Sources */,
-				7593DB362997C62900E5CA9C /* alert.swift in Sources */,
 				759BDFB52992696000DFFC03 /* Welcome.swift in Sources */,
 				75B77ACD299513D20045D29D /* ApplicationNameComponents.swift in Sources */,
 				7593DB2E299796D800E5CA9C /* QCCAESPadCryptor.m in Sources */,

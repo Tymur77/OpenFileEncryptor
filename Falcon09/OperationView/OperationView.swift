@@ -105,7 +105,10 @@ struct OperationView: View {
             animate = true
             main()
         }
-        .alert("Operation failed alert title", isPresented: $isPresentingAlert) {
+        .alert(
+            Text(NSLocalizedString("Operation failed", comment: "Operation failed alert title")),
+            isPresented: $isPresentingAlert)
+        {
             Button(NSLocalizedString("Restart", comment: "Restart button")) {
                 screen = .welcome
             }

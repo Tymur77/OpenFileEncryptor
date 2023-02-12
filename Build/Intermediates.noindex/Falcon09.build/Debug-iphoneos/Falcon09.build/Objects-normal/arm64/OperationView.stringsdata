@@ -1,12 +1,5 @@
 {
   "source": "/Users/viktoria/Projects/ios/Falcon09/Falcon09/OperationView/OperationView.swift",
-  "tables": {
-    "Localizable": [
-      {
-        "comment": "",
-        "key": "Operation failed alert title"
-      }
-    ]
-  },
+  "tables": {},
   "version": 1
 }
