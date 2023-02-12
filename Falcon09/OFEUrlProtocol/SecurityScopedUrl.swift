@@ -1,5 +1,5 @@
 //
-//  SecureScopedUrl.swift
+//  SecurityScopedUrl.swift
 //  Falcon09
 //
 //  Created by Виктория on 12.02.2023.
