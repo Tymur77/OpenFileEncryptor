@@ -15,5 +15,4 @@ protocol OFEUrlProtocol: Hashable {
     var operation: CryptoOperation! { get }
     var lastPathComponent: String { get }
     var pathExtension: String { get }
-    var securityScopedWrapper: SecurityScopedUrl { get }
 }

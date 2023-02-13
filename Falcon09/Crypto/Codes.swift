@@ -14,6 +14,8 @@ enum Code: Int {
     case DocumentError = 503
     case AccessSecurityScopedUrlError = 504
     case DataError = 505
+    case InputStreamError = 506
+    case OutputStreamError = 507
 }
 
 extension NSError {

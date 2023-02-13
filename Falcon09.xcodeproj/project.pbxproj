@@ -33,6 +33,7 @@
 		7593DB462998F0B900E5CA9C /* AnyOFEUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7593DB452998F0B900E5CA9C /* AnyOFEUrl.swift */; };
 		759BDFB52992696000DFFC03 /* Welcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759BDFB42992696000DFFC03 /* Welcome.swift */; };
 		759BDFB72992D39100DFFC03 /* DocumentPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759BDFB62992D39000DFFC03 /* DocumentPicker.swift */; };
+		759C6B8F299A5A1000704503 /* QCCAESPadBigCryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 759C6B8E299A5A1000704503 /* QCCAESPadBigCryptor.m */; };
 		75B77AB82993E5350045D29D /* string.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B77AB72993E5350045D29D /* string.swift */; };
 		75B77ABA2993E5550045D29D /* url.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B77AB92993E5550045D29D /* url.swift */; };
 		75B77ABE2993F5290045D29D /* dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B77ABD2993F5290045D29D /* dictionary.swift */; };
@@ -80,6 +81,8 @@
 		7593DB452998F0B900E5CA9C /* AnyOFEUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyOFEUrl.swift; sourceTree = "<group>"; };
 		759BDFB42992696000DFFC03 /* Welcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Welcome.swift; sourceTree = "<group>"; };
 		759BDFB62992D39000DFFC03 /* DocumentPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentPicker.swift; sourceTree = "<group>"; };
+		759C6B8D299A5A1000704503 /* QCCAESPadBigCryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCCAESPadBigCryptor.h; sourceTree = "<group>"; };
+		759C6B8E299A5A1000704503 /* QCCAESPadBigCryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCCAESPadBigCryptor.m; sourceTree = "<group>"; };
 		75B77AB72993E5350045D29D /* string.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = string.swift; sourceTree = "<group>"; };
 		75B77AB92993E5550045D29D /* url.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = url.swift; sourceTree = "<group>"; };
 		75B77ABD2993F5290045D29D /* dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dictionary.swift; sourceTree = "<group>"; };
@@ -124,6 +127,8 @@
 		7511E6F6298D6F2F0027221D /* Falcon09 */ = {
 			isa = PBXGroup;
 			children = (
+				759C6B8D299A5A1000704503 /* QCCAESPadBigCryptor.h */,
+				759C6B8E299A5A1000704503 /* QCCAESPadBigCryptor.m */,
 				7593DB392998214D00E5CA9C /* Localizable.strings */,
 				7593DB2B299796D800E5CA9C /* QCCAESPadCryptor.h */,
 				7593DB28299796D700E5CA9C /* QCCAESPadCryptor.m */,
@@ -309,6 +314,7 @@
 			files = (
 				7511E6FA298D6F2F0027221D /* PasswordBar.swift in Sources */,
 				7593DB2629978ED700E5CA9C /* Codes.swift in Sources */,
+				759C6B8F299A5A1000704503 /* QCCAESPadBigCryptor.m in Sources */,
 				7593DB2F299796D800E5CA9C /* QCCPBKDF2SHAKeyDerivation.m in Sources */,
 				7593DB15299538AE00E5CA9C /* YellowButton.swift in Sources */,
 				7593DB3E2998CFC800E5CA9C /* WelcomeExtensions.swift in Sources */,

@@ -10,11 +10,12 @@ import SwiftUI
 
 
 struct AnyOFEUrl: OFEUrlProtocol {
-    private let _url: any OFEUrlProtocol
-    var url: any OFEUrlProtocol { _url }
+    private var url: any OFEUrlProtocol
+    var foundationUrl: URL? { self.url as? URL }
+    var securityScopedUrl: SecurityScopedUrl? { self.url as? SecurityScopedUrl }
     
     init(_ url: any OFEUrlProtocol) {
-        _url = url
+        self.url = url
     }
     
     var size: Int? { self.url.size }
@@ -28,8 +29,6 @@ struct AnyOFEUrl: OFEUrlProtocol {
     var lastPathComponent: String { self.url.lastPathComponent }
     
     var pathExtension: String { self.url.pathExtension }
-    
-    var securityScopedWrapper: SecurityScopedUrl { self.url.securityScopedWrapper }
     
     static func == (lhs: AnyOFEUrl, rhs: AnyOFEUrl) -> Bool {
         if let url1 = lhs.url as? URL, let url2 = rhs.url as? URL {

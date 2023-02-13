@@ -4,3 +4,4 @@
 #include "QCCAESPadCryptor.h"
 #include "QCCPBKDF2SHAKeyDerivation.h"
 #include "QCCSHADigest.h"
+#include "QCCAESPadBigCryptor.h"

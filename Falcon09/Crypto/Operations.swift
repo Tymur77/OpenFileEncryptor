@@ -33,11 +33,35 @@ func encrypt(_ data: Data, withKey key: Data) throws -> Data {
     return outputData
 }
 
+func encrypt(dataFrom url: URL, withKey key: Data, outputTo outUrl: URL) throws {
+    let inputStream: InputStream! = InputStream(url: url)
+    if inputStream == nil {
+        throw NSError(domain: OpenFileEncryptorDomain, code: .InputStreamError)
+    }
+    let outputStream: OutputStream! = OutputStream(url: outUrl, append: true)
+    if outputStream == nil {
+        throw NSError(domain: OpenFileEncryptorDomain, code: .OutputStreamError)
+    }
+    let op = QCCAESPadBigCryptor(toEncryptInputStream: inputStream, to: outputStream, keyData: key)
+    op.main()
+    guard op.error == nil else { throw op.error! }
+}
+
 func decrypt(_ data: Data, withKey key: Data) throws -> Data {
     let op = QCCAESPadCryptor(toDecryptInputData: data, keyData: key)
     op.main()
     guard op.error == nil, let outputData = op.outputData else { throw op.error! }
     return outputData
+}
+
+func decrypt(dataFrom inputStream: InputStream, withKey key: Data, outputTo outUrl: URL) throws {
+    let outputStream: OutputStream! = OutputStream(url: outUrl, append: false)
+    if outputStream == nil {
+        throw NSError(domain: OpenFileEncryptorDomain, code: .OutputStreamError)
+    }
+    let op = QCCAESPadBigCryptor(toDecryptInputStream: inputStream, to: outputStream, keyData: key)
+    op.main()
+    guard op.error == nil else { throw op.error! }
 }
 
 func hash(_ data: Data) throws -> Data {

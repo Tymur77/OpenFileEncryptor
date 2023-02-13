@@ -29,12 +29,21 @@ extension OperationView {
             let start = Date()
             do {
                 if operation == .encrypt {
-                    let data = try Crypto.encryptFileAt(url, withPassword: password)
                     let outPath = NSTemporaryDirectory() + url.lastPathComponent + ".crypto"
                     outUrl = URL(filePath: outPath)
-                    try data.write(to: outUrl)
+                    if let securityScopedUrl = url.securityScopedUrl {
+                        try securityScopedUrl.read {
+                            try Crypto.encrypt(
+                                fileAt: $0,
+                                withPassword: password,
+                                outputTo: outUrl)
+                        }
+                    } else if let url = url.foundationUrl {
+                        try Crypto.encrypt(fileAt: url, withPassword: password, outputTo: outUrl)
+                    } else {
+                        throw NSError(domain: OpenFileEncryptorDomain, code: 1)
+                    }
                 } else {
-                    let data = try Crypto.decryptFileAt(url, withPassword: password)
                     var outPath: String
                     if url.pathExtension == "crypto" {
                         let filename = url.lastPathComponent
@@ -44,7 +53,16 @@ extension OperationView {
                         outPath = NSTemporaryDirectory() + url.lastPathComponent
                     }
                     outUrl = URL(filePath: outPath)
-                    try data.write(to: outUrl)
+                    if let securityScopedUrl = url.securityScopedUrl {
+                        try securityScopedUrl.read {
+                            try Crypto.decrypt(
+                                fileAt: $0,
+                                withPassword: password,
+                                outputTo: outUrl)
+                        }
+                    } else if let url = url.foundationUrl {
+                        try Crypto.decrypt(fileAt: url, withPassword: password, outputTo: outUrl)
+                    }
                 }
                 let elapsed = Date().timeIntervalSince(start)
                 // 3.1 + x = 6

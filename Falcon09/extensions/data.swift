@@ -32,9 +32,9 @@ extension Data {
     }
     
     init(contentsOf url: AnyOFEUrl) throws {
-        if let securityScopedUrl = url.url as? SecurityScopedUrl {
+        if let securityScopedUrl = url.securityScopedUrl {
             self = try Data(contentsOf: securityScopedUrl)
-        } else if let url = url.url as? URL {
+        } else if let url = url.foundationUrl {
             self = try Data(contentsOf: url)
         } else {
             throw NSError(domain: OpenFileEncryptorDomain, code: .DataError)

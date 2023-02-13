@@ -118,6 +118,4 @@ struct SecurityScopedUrl: OFEUrlProtocol {
         }
     }
     
-    var securityScopedWrapper: SecurityScopedUrl { self }
-    
 }

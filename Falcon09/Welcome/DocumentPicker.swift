@@ -19,8 +19,13 @@ struct DocumentPicker: UIViewControllerRepresentable {
         }
         
         func documentPicker(_ controller: UIDocumentPickerViewController, didPickDocumentsAt urls: [URL]) {
-            if let url = urls.first {
-                documentPicker.url = AnyOFEUrl(url)
+            if let securityScopedUrl = urls.first?.securityScopedWrapper {
+                var array = UserDefaults.standard.array(forKey: "bookmarks") ?? []
+                if let bookmark = securityScopedUrl.bookmark {
+                    array.append(bookmark)
+                }
+                UserDefaults.standard.set(array, forKey: "bookmarks")
+                documentPicker.url = AnyOFEUrl(securityScopedUrl)
             }
         }
     }
@@ -28,7 +33,7 @@ struct DocumentPicker: UIViewControllerRepresentable {
     @Binding var url: AnyOFEUrl!
     
     func makeUIViewController(context: Context) -> UIDocumentPickerViewController {
-        let picker = UIDocumentPickerViewController(forOpeningContentTypes: [.init("public.data")!], asCopy: true)
+        let picker = UIDocumentPickerViewController(forOpeningContentTypes: [.init("public.data")!], asCopy: false)
         picker.delegate = context.coordinator
         return picker
     }
