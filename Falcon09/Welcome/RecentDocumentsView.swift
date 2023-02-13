@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+
 struct RecentDocumentsView: View {
     let parent: Welcome
     let action: (SecurityScopedUrl) -> Void
@@ -28,10 +29,20 @@ struct RecentDocumentsView: View {
                     VStack(alignment: .leading) {
                         ForEach(urls, id: \.self) { securityScopedUrl in
                             Button { action(securityScopedUrl) } label: {
-                                Text(securityScopedUrl.lastPathComponent)
-                                    .foregroundColor(Color.white)
-                                    .padding([.bottom], 2)
-                                    .lineLimit(1)
+                                HStack(alignment: .firstTextBaseline) {
+                                    ZStack {
+                                        if securityScopedUrl.pathExtension == "crypto" {
+                                            Image("encrypted-document")
+                                                .resizable(resizingMode: .stretch)
+                                                .scaledToFit()
+                                        }
+                                    }
+                                    .frame(width: 20, height: 20)
+                                    Text(securityScopedUrl.lastPathComponent)
+                                        .foregroundColor(Color.white)
+                                        .lineLimit(1)
+                                    Spacer()
+                                }
                             }
                         }
                     }

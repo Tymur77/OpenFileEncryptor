@@ -1,7 +1,7 @@
 version: "Apple Swift version 5.7.1 (swiftlang-5.7.1.135.3 clang-1400.0.29.51)"
 options: "353e02c8413dc958f56eeb4245525cd916e0e35f0d3d7f49a27b8cc19cb2b3ab"
-build_start_time: [1676290788, 333108901]
-build_end_time: [1676290795, 32349109]
+build_start_time: [1676314569, 337427139]
+build_end_time: [1676314571, 737135887]
 inputs:
   "/Users/viktoria/Projects/ios/Falcon09/Falcon09/Crypto/Codes.swift": [1676290785, 19199848]
   "/Users/viktoria/Projects/ios/Falcon09/Falcon09/Crypto/Crypto.swift": [1676290785, 47332048]
@@ -24,7 +24,7 @@ inputs:
   "/Users/viktoria/Projects/ios/Falcon09/Falcon09/Size.swift": [1675946325, 989426851]
   "/Users/viktoria/Projects/ios/Falcon09/Falcon09/Welcome/ApplicationNameComponents.swift": [1676045146, 97161769]
   "/Users/viktoria/Projects/ios/Falcon09/Falcon09/Welcome/DocumentPicker.swift": [1676290785, 95657825]
-  "/Users/viktoria/Projects/ios/Falcon09/Falcon09/Welcome/RecentDocumentsView.swift": [1676212172, 270361185]
+  "/Users/viktoria/Projects/ios/Falcon09/Falcon09/Welcome/RecentDocumentsView.swift": [1676314569, 141044139]
   "/Users/viktoria/Projects/ios/Falcon09/Falcon09/Welcome/Welcome.swift": [1676212172, 240526437]
   "/Users/viktoria/Projects/ios/Falcon09/Falcon09/Welcome/WelcomeExtensions.swift": [1676196088, 656414985]
   "/Users/viktoria/Projects/ios/Falcon09/Falcon09/extensions/array.swift": [1675946326, 108613967]
