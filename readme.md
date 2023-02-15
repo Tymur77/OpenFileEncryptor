@@ -15,18 +15,18 @@ algorithms to let you quickly and easily encrypt any of your documents.
 Designed to boost performance and equipped with a user-friendly interface, 
 it is the best choice if you need to secure your data before sending it 
 through an unsafe channel to the receiver.
-<img 
+<br><img 
 src="https://github.com/Tymur77/OpenFileEncryptor/blob/master/images/welcome-screen.PNG" 
 width="200px" height="433px">
-<img 
+<br><img 
 src="https://github.com/Tymur77/OpenFileEncryptor/blob/master/images/welcome-screen-animation.gif" 
 width="200px" height="433px">
-<img 
+<br><img 
 src="https://github.com/Tymur77/OpenFileEncryptor/blob/master/images/password-screen.PNG" 
 width="200px" height="433px">
-<img 
+<br><img 
 src="https://github.com/Tymur77/OpenFileEncryptor/blob/master/images/encryption-animation.gif" 
 width="200px" height="433px">
-<img 
+<br><img 
 src="https://github.com/Tymur77/OpenFileEncryptor/blob/master/images/operation-screen.PNG" 
 width="200px" height="433px">
