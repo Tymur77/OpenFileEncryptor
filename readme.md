@@ -15,13 +15,18 @@ algorithms to let you quickly and easily encrypt any of your documents.
 Designed to boost performance and equipped with a user-friendly interface, 
 it is the best choice if you need to secure your data before sending it 
 through an unsafe channel to the receiver.
-![welcome 
-screen](https://github.com/Tymur77/OpenFileEncryptor/blob/master/images/welcome-screen.PNG)
-![welcome screen 
-animation](https://github.com/Tymur77/OpenFileEncryptor/blob/master/images/welcome-screen-animation.gif)	
-![password 
-screen](https://github.com/Tymur77/OpenFileEncryptor/blob/master/images/password-screen.PNG)
-![encryption 
-animation](https://github.com/Tymur77/OpenFileEncryptor/blob/master/images/encryption-animation.gif)
-![operation 
-screen](https://github.com/Tymur77/OpenFileEncryptor/blob/master/images/operation-screen.PNG)
+<img 
+src="https://github.com/Tymur77/OpenFileEncryptor/blob/master/images/welcome-screen.PNG" 
+style="max-width:300px; width: auto; height: auto;">
+<img 
+src="https://github.com/Tymur77/OpenFileEncryptor/blob/master/images/welcome-screen-animation.gif" 
+style="max-width:300px; width: auto; height: auto;">
+<img 
+src="https://github.com/Tymur77/OpenFileEncryptor/blob/master/images/password-screen.PNG" 
+style="max-width:300px; width: auto; height: auto;">
+<img 
+src="https://github.com/Tymur77/OpenFileEncryptor/blob/master/images/encryption-animation.gif" 
+style="max-width:300px; width: auto; height: auto;">
+<img 
+src="https://github.com/Tymur77/OpenFileEncryptor/blob/master/images/operation-screen.PNG" 
+style="max-width:300px; width: auto; height: auto;">
