@@ -17,16 +17,16 @@ it is the best choice if you need to secure your data before sending it
 through an unsafe channel to the receiver.
 <img 
 src="https://github.com/Tymur77/OpenFileEncryptor/blob/master/images/welcome-screen.PNG" 
-style="max-width:300px; width: auto; height: auto;">
+width="200px" height="433px">
 <img 
 src="https://github.com/Tymur77/OpenFileEncryptor/blob/master/images/welcome-screen-animation.gif" 
-style="max-width:300px; width: auto; height: auto;">
+width="200px" height="433px">
 <img 
 src="https://github.com/Tymur77/OpenFileEncryptor/blob/master/images/password-screen.PNG" 
-style="max-width:300px; width: auto; height: auto;">
+width="200px" height="433px">
 <img 
 src="https://github.com/Tymur77/OpenFileEncryptor/blob/master/images/encryption-animation.gif" 
-style="max-width:300px; width: auto; height: auto;">
+width="200px" height="433px">
 <img 
 src="https://github.com/Tymur77/OpenFileEncryptor/blob/master/images/operation-screen.PNG" 
-style="max-width:300px; width: auto; height: auto;">
+width="200px" height="433px">
