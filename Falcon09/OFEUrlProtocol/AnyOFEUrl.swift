@@ -31,9 +31,9 @@ struct AnyOFEUrl: OFEUrlProtocol {
     var pathExtension: String { self.url.pathExtension }
     
     static func == (lhs: AnyOFEUrl, rhs: AnyOFEUrl) -> Bool {
-        if let url1 = lhs.url as? URL, let url2 = rhs.url as? URL {
+        if let url1 = lhs.foundationUrl, let url2 = rhs.foundationUrl {
             return url1 == url2
-        } else if let url1 = lhs.url as? SecurityScopedUrl, let url2 = rhs.url as? SecurityScopedUrl {
+        } else if let url1 = lhs.securityScopedUrl, let url2 = rhs.securityScopedUrl {
             return url1 == url2
         } else {
             return false

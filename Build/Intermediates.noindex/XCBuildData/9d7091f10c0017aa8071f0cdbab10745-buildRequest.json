@@ -1,0 +1,66 @@
+{
+  "_buildCommand2" : {
+    "command" : "build",
+    "skipDependencies" : false,
+    "style" : "buildAndRun"
+  },
+  "buildCommand" : "build",
+  "configuredTargets" : [
+    {
+      "guid" : "20fee68644a24822f80696468db904d0c2ef76546900e87bd10f36fb49fa0752"
+    }
+  ],
+  "containerPath" : "/Users/viktoria/Projects/ios/Falcon09/Falcon09.xcodeproj",
+  "continueBuildingAfterErrors" : false,
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "build",
+    "activeArchitecture" : "arm64",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : false,
+      "platform" : "iphoneos",
+      "sdk" : "iphoneos16.1",
+      "sdkVariant" : "iphoneos",
+      "supportedArchitectures" : [
+        "arm64e",
+        "arm64v8",
+        "arm64",
+        "armv8"
+      ],
+      "targetArchitecture" : "arm64"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex",
+      "buildProductsPath" : "/Users/viktoria/Projects/ios/Falcon09/Build/Products",
+      "derivedDataPath" : "/Users/viktoria/Library/Developer/Xcode/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/viktoria/Library/Developer/Xcode/DerivedData/Falcon09-fjyeejprrfnaauanfrirhlbxynov/Index.noindex/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/viktoria/Library/Developer/Xcode/DerivedData/Falcon09-fjyeejprrfnaauanfrirhlbxynov/Index.noindex/PrecompiledHeaders",
+      "pchPath" : "/Users/viktoria/Projects/ios/Falcon09/Build/Intermediates.noindex/PrecompiledHeaders"
+    },
+    "configurationName" : "Debug",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ASSETCATALOG_FILTER_FOR_DEVICE_MODEL" : "iPhone11,8",
+          "ASSETCATALOG_FILTER_FOR_DEVICE_OS_VERSION" : "16.1.1",
+          "ASSETCATALOG_FILTER_FOR_THINNING_DEVICE_CONFIGURATION" : "iPhone11,8",
+          "BUILD_ACTIVE_RESOURCES_ONLY" : "YES",
+          "ENABLE_PREVIEWS" : "NO",
+          "TARGET_DEVICE_IDENTIFIER" : "00008020-00197DC80A7B002E",
+          "TARGET_DEVICE_MODEL" : "iPhone11,8",
+          "TARGET_DEVICE_OS_VERSION" : "16.1.1",
+          "TARGET_DEVICE_PLATFORM_NAME" : "iphoneos"
+        }
+      }
+    }
+  },
+  "schemeCommand" : "launch",
+  "schemeCommand2" : "launch",
+  "showNonLoggedProgress" : true,
+  "useDryRun" : false,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}

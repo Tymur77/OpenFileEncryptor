@@ -9,11 +9,12 @@ import Foundation
 import SwiftUI
 
 extension Color {
-    init(_ hex: UInt32,
-         _ redOut: UnsafeMutablePointer<UInt8>? = nil,
-         _ greenOut: UnsafeMutablePointer<UInt8>? = nil,
-         _ blueOut: UnsafeMutablePointer<UInt8>? = nil)
-    {
+    init(
+        _ hex: UInt32,
+        _ redOut: UnsafeMutablePointer<UInt8>? = nil,
+        _ greenOut: UnsafeMutablePointer<UInt8>? = nil,
+        _ blueOut: UnsafeMutablePointer<UInt8>? = nil
+    ) {
         var hex = hex.bigEndian
         let p = UnsafeRawPointer.init(&hex)
         
